@@ -17,85 +17,82 @@ var map = L.map("map", {
   maxZoom: 1,
   zoomControl: false,
   attributionControl: false,
-  // layers: [
-  //   landMap,
-  //   roads_lg,
-  //   mountains_lg,
-  //   islands_lg,
-  //   waters_lg,
-  //   hills_lg,
-  //   forests_lg,
-  //   deserts_lg,
-  //   swamps_lg,
-  //   capitals_lg,
-  //   cities_lg,
-  //   keeps_lg,
-  //   villages_lg,
-  //   ruins_lg,
-  //   locations_lg,
-  //   observatories_lg,
-  //   portals_lg
-  // ]
+  layers: [
+    // landMap,
+    // roads_lg,
+    // mountains_lg,
+    // islands_lg,
+    // waters_lg,
+    // hills_lg,
+    // forests_lg,
+    // deserts_lg,
+    // swamps_lg,
+    capitals_lg,
+    // cities_lg,
+    // keeps_lg,
+    // villages_lg,
+    // ruins_lg,
+    // locations_lg,
+    // observatories_lg,
+  ]
 });
 
 var bounds = [
   [0, 0],
-  [3200, 4800]
+  [3072, 4096]
 ];
 
 map.fitBounds(bounds);
 
 // Layers
-// otherMap = L.imageOverlay("/maps/aumyr-underground.jpg", bounds);
+// otherMap = L.imageOverlay("/maps/aumyr/aumyr.jpg", bounds);
 
 // BaseLayers
 var baseLayers = {
-  Aumyr: landMap
-  // Altro Layer: otherMap
+  // Uthos: landMap,
+  // AltroLayer: otherMap
 };
 
 // Markers
 var markers = {
-  Regioni: regions_lg,
+  // Regioni: regions_lg,
   Capitali: capitals_lg,
-  Città: cities_lg,
-  Fortezze: keeps_lg,
-  Villaggi: villages_lg,
-  Luoghi: locations_lg,
-  Osservatori: observatories_lg,
-  Portali: portals_lg,
-  Rovine: ruins_lg
+  // Città: cities_lg,
+  // Fortezze: keeps_lg,
+  // Villaggi: villages_lg,
+  // Luoghi: locations_lg,
+  // Osservatori: observatories_lg,
+  // Rovine: ruins_lg
 };
 
 // Init base Map
-var aumyrBaseMap = L.imageOverlay("/maps/uthos/uthos.jpg", bounds).addTo(map);
+var uthosBaseMap = L.imageOverlay("/maps/uthos/uthos.jpg", bounds).addTo(map);
 
 // Concat Markers for search
-var allMarkers = villages_markers.concat(
-  roads_markers,
-  mountains_markers,
-  islands_markers,
-  waters_markers,
-  hills_markers,
-  forests_markers,
-  deserts_markers,
-  swamps_markers,
-  capitals_markers,
-  cities_markers,
-  keeps_markers,
-  ruins_markers,
-  locations_markers,
-  observatories_markers,
-  portals_markers
+var allMarkers = capitals_markers.concat(
+  // roads_markers,
+  // mountains_markers,
+  // islands_markers,
+  // waters_markers,
+  // hills_markers,
+  // forests_markers,
+  // deserts_markers,
+  // swamps_markers,
+  // villages_markers,
+  // cities_markers,
+  // keeps_markers,
+  // ruins_markers,
+  // locations_markers,
+  // observatories_markers,
 );
 
 // console.table(allMarkers);
 
 // Easybutton base
 // L.easyButton(
-//   '<div class="nav-menu"><img src="/assets/img/logo-aumyr-atlas.svg"></div>',
+//   '<div class="nav-menu"><img src="/assets/img/logo-uthos.png"></div>',
 //   function(btn, map) {
-//     // bla
+//     // Lorem ipsum
 //   }
 // ).addTo(map);
 
@@ -110,18 +107,18 @@ function getAllData(text, callResponse) {
 }
 
 // Control Search
-// map.addControl(
-//   new L.Control.Search({
-//     propertyName: "label",
-//     sourceData: getAllData,
-//     textPlaceholder: "Cerca...",
-//     textErr: "Nessun luogo trovato",
-//     textCancel: "Annulla",
-//     hideMarkerOnCollapse: true,
-//     markerLocation: true,
-//     zoom: 1
-//   })
-// );
+map.addControl(
+  new L.Control.Search({
+    propertyName: "label",
+    sourceData: getAllData,
+    textPlaceholder: "Cerca...",
+    textErr: "Nessun luogo trovato",
+    textCancel: "Annulla",
+    hideMarkerOnCollapse: true,
+    markerLocation: true,
+    zoom: 1
+  })
+);
 
 // Filter
 // L.control
@@ -132,12 +129,12 @@ function getAllData(text, callResponse) {
 //   .addTo(map);
 
 // Control Layers
-// L.control
-//   .layers(baseLayers, markers, {
-//     collapsed: true,
-//     position: "topleft"
-//   })
-//   .addTo(map);
+L.control
+  .layers(baseLayers, markers, {
+    collapsed: true,
+    position: "topleft"
+  })
+  .addTo(map);
 
 // Control Zoom
 L.control
@@ -158,12 +155,12 @@ map.addControl(
 );
 
 // Plugins: Location Share
-map.addControl(
-  new L.Control.ShareLocation({
-    position: "topright",
-    title: "Condividi Posizione"
-  })
-);
+// map.addControl(
+//   new L.Control.ShareLocation({
+//     position: "topright",
+//     title: "Condividi Posizione"
+//   })
+// );
 
 // Plugin: Marker cluster
 // var clusterGroup = L.markerClusterGroup({});
