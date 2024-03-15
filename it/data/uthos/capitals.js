@@ -3,8 +3,8 @@ let capitals_lg = L.layerGroup();
 let capitals_markers = [
   // Confederazione dell'Alba
   {
-    label: "Approdo Crepuscolare",
-    loc: [1333, 2781],
+    label: "Baleria",
+    loc: [1853, 1404],
     pop: "Lorem ipsum dolor sit amet",
     img: "/images/capitals/dunmere.jpg",
     // copy: "https://www.deviantart.com/memod/art/Frogster-game-concept-05-318588125",
@@ -12,76 +12,24 @@ let capitals_markers = [
     // link: "https://www.aumyr.world/geography/nordavind.html#dunmere",
     // linkMap: "baleria.html"
   },
-  {
-    label: "Baleria",
-    loc: [1853, 1404],
-    pop: "Lorem ipsum dolor sit amet",
-    img: "/images/capitals/dunmere.jpg",
-  },
-  {
-    label: "Feralian",
-    loc: [855, 3046],
-    pop: "Lorem ipsum dolor sit amet",
-    img: "/images/capitals/dunmere.jpg",
-  },
-  {
-    label: "Kart",
-    loc: [1791, 743],
-    pop: "Lorem ipsum dolor sit amet",
-    img: "/images/capitals/dunmere.jpg",
-  },
-  {
-    label: "Relarian",
-    loc: [1618, 1259],
-    pop: "Lorem ipsum dolor sit amet",
-    img: "/images/capitals/dunmere.jpg",
-  },
-  {
-    label: "Tirism",
-    loc: [1261, 1078],
-    pop: "Lorem ipsum dolor sit amet",
-    img: "/images/capitals/dunmere.jpg",
-  },
   // Enclave di Smeraldo
-  {
-    label: "Altopasso",
-    loc: [929, 715],
-    pop: "Lorem ipsum dolor sit amet",
-    img: "/images/capitals/dunmere.jpg",
-  },
-  {
-    label: "Bassoporto",
-    loc: [1819, 2429],
-    pop: "Lorem ipsum dolor sit amet",
-    img: "/images/capitals/dunmere.jpg",
-  },
-  {
-    label: "Dirupia",
-    loc: [669, 1577],
-    pop: "Lorem ipsum dolor sit amet",
-    img: "/images/capitals/dunmere.jpg",
-  },
-  {
-    label: "Ferracava",
-    loc: [646, 924],
-    pop: "Lorem ipsum dolor sit amet",
-    img: "/images/capitals/dunmere.jpg",
-  },
-  {
-    label: "Lithoria",
-    loc: [2026, 2250],
-    pop: "Lorem ipsum dolor sit amet",
-    img: "/images/capitals/dunmere.jpg",
-  },
   {
     label: "Mirs",
     loc: [446, 226],
     pop: "Lorem ipsum dolor sit amet",
     img: "/images/capitals/dunmere.jpg",
   },
+  // Lar Bane
   {
-    label: "Roccargento",
-    loc: [1869, 1872],
+    label: "Minas Bane",
+    loc: [187, 2476],
+    pop: "Lorem ipsum dolor sit amet",
+    img: "/images/capitals/dunmere.jpg",
+  },
+  // Melidor
+  {
+    label: "Bassoporto",
+    loc: [1819, 2429],
     pop: "Lorem ipsum dolor sit amet",
     img: "/images/capitals/dunmere.jpg",
   },
@@ -94,20 +42,15 @@ let capitals_markers = [
   },
   // Teocrazia di Moradin
   {
-    label: "Anticatorre",
-    loc: [1172, 1599],
-    pop: "Lorem ipsum dolor sit amet",
-    img: "/images/capitals/dunmere.jpg",
-  },
-  {
     label: "Sicariad",
     loc: [870, 1705],
     pop: "Lorem ipsum dolor sit amet",
     img: "/images/capitals/dunmere.jpg",
   },
+  // Tolidor
   {
-    label: "Minas Bane",
-    loc: [187, 2476],
+    label: "Città 2",
+    loc: [1224, 3131],
     pop: "Lorem ipsum dolor sit amet",
     img: "/images/capitals/dunmere.jpg",
   },

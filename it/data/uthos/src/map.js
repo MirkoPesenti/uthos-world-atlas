@@ -18,8 +18,12 @@ var map = L.map("map", {
   zoomControl: false,
   attributionControl: false,
   layers: [
-    kingdoms_lg,
+    // kingdoms_lg,
     capitals_lg,
+    cities_lg,
+    // keeps_lg,
+    // locations_lg,
+    
     // landMap,
     // roads_lg,
     // mountains_lg,
@@ -29,12 +33,8 @@ var map = L.map("map", {
     // forests_lg,
     // deserts_lg,
     // swamps_lg,
-    // cities_lg,
-    // keeps_lg,
     // villages_lg,
     // ruins_lg,
-    // locations_lg,
-    // observatories_lg,
   ]
 });
 
@@ -58,11 +58,10 @@ var baseLayers = {
 var markers = {
   Regni: kingdoms_lg,
   Capitali: capitals_lg,
-  // Città: cities_lg,
-  // Fortezze: keeps_lg,
+  Città: cities_lg,
+  Fortezze: keeps_lg,
+  Luoghi: locations_lg,
   // Villaggi: villages_lg,
-  // Luoghi: locations_lg,
-  // Osservatori: observatories_lg,
   // Rovine: ruins_lg
 };
 
@@ -72,6 +71,9 @@ var uthosBaseMap = L.imageOverlay("/maps/uthos/uthos.jpg", bounds).addTo(map);
 // Concat Markers for search
 var allMarkers = capitals_markers.concat(
   kingdoms_markers,
+  cities_markers,
+  keeps_markers,
+  locations_markers,
   // roads_markers,
   // mountains_markers,
   // islands_markers,
@@ -81,11 +83,7 @@ var allMarkers = capitals_markers.concat(
   // deserts_markers,
   // swamps_markers,
   // villages_markers,
-  // cities_markers,
-  // keeps_markers,
   // ruins_markers,
-  // locations_markers,
-  // observatories_markers,
 );
 
 // console.table(allMarkers);

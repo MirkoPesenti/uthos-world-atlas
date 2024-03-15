@@ -294,18 +294,36 @@ img.icon-share-button {
   display: none;
 }
 
-/* Markers: Region Polygon Line Color*/
-.region {
-  stroke: #fff;
-}
 
-/* Markers: Region Backgrounds */
-.region {
-  fill: rgba(255, 255, 255, 0.6);
-}
-/* .region.region-Nordavind {
-  fill: rgba(255, 255, 255, 0.6);
-} */
+
+/* Markers > Kingdoms */
+.kingdom {stroke:rgba(255,255,255,.6);}
+
+/* Markers > Kingdoms > Tooltips */
+.kingdom-tooltip {}
+
+/* Markers > Kingdoms > Confederazione dell'Alba */
+.kingdom-confederation {fill:#3388ff;}
+
+/* Markers > Kingdoms > Enclave di Smeraldo */
+.kingdom-enclave  {fill:#4dfb98;}
+
+/* Markers > Kingdoms > Lar Bane */
+.kingdom-bane  {fill:#551f1f;}
+
+/* Markers > Kingdoms > Melidor */
+.kingdom-melidor  {fill:#4f1e72;}
+
+/* Markers > Kingdoms > Regno degli Elfi */
+.kingdom-elfs  {fill:#bebe4f;}
+
+/* Markers > Kingdoms > Teocrazia di Moradin */
+.kingdom-theocracy  {fill:#e85566;}
+
+/* Markers > Kingdoms > Tolidor */
+.kingdom-tolidor  {fill:#ffffff;}
+
+
 
 /* Markers > Icons */
 .leaflet-marker-icon.no-icon {

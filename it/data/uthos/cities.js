@@ -1,333 +1,211 @@
 let cities_lg = L.layerGroup();
 
 let cities_markers = [
-  // Nordavind
+  // Confederazione dell'Alba
   {
-    label: "Hilden",
-    loc: [2473.5, 457.5],
-    pop: "",
+    label: "Kart",
+    loc: [1791, 743],
+    pop: "Lorem ipsum dolor sit amet",
     link: "#"
   },
   {
-    label: "Endur",
-    loc: [2328.5, 400.5],
-    pop: "",
+    label: "Relarian",
+    loc: [1618, 1259],
+    pop: "Lorem ipsum dolor sit amet",
     link: "#"
   },
   {
-    label: "Icegate",
-    loc: [2510.5, 863.5],
-    pop: "",
+    label: "Tirism",
+    loc: [1261, 1078],
+    pop: "Lorem ipsum dolor sit amet",
     link: "#"
   },
   {
-    label: "Meremar",
-    loc: [2881, 1171.5],
-    pop: "",
-    link: "#"
-  },
-  // Valdarn
-  {
-    label: "Daxxos",
-    loc: [2678, 1331],
-    pop: "",
-    link: "#"
-  },
-  // Zeitan
-  {
-    label: "Zaldar",
-    loc: [2924, 2645],
-    pop: "",
+    label: "Città 1",
+    loc: [1915, 1085],
+    pop: "Lorem ipsum dolor sit amet",
     link: "#"
   },
   {
-    label: "Fel-Doras",
-    loc: [3029, 3187],
-    pop: "",
+    label: "Città 2",
+    loc: [1535, 740],
+    pop: "Lorem ipsum dolor sit amet",
     link: "#"
   },
   {
-    label: "Innerdale",
-    loc: [2737, 3537],
-    pop: "",
-    link: "#"
-  },
-  // Laangor
-  {
-    label: "Hundres",
-    loc: [2457, 3814],
-    pop: "",
+    label: "Città 3",
+    loc: [1342, 964],
+    pop: "Lorem ipsum dolor sit amet",
     link: "#"
   },
   {
-    label: "Trailstone",
-    loc: [2461, 4245],
-    pop: "",
+    label: "Città 4",
+    loc: [1258, 1418],
+    pop: "Lorem ipsum dolor sit amet",
     link: "#"
   },
   {
-    label: "Ariadne",
-    loc: [2702.5, 4457],
-    pop: "",
+    label: "Città 5",
+    loc: [2231, 1190],
+    pop: "Lorem ipsum dolor sit amet",
+    link: "#"
+  },
+  // Enclave di Smeraldo
+  {
+    label: "Altopasso",
+    loc: [929, 715],
+    pop: "Lorem ipsum dolor sit amet",
     link: "#"
   },
   {
-    label: "Sailwind",
-    loc: [2538, 4666],
-    pop: "",
+    label: "Dirupia",
+    loc: [669, 1577],
+    pop: "Lorem ipsum dolor sit amet",
     link: "#"
   },
   {
-    label: "Thoras",
-    loc: [2254, 4532],
-    pop: "",
+    label: "Ferracava",
+    loc: [646, 924],
+    pop: "Lorem ipsum dolor sit amet",
     link: "#"
   },
   {
-    label: "Raven's Cove",
-    loc: [2054, 4389],
-    pop: "",
-    link: "#"
-  },
-  // Jhert
-  {
-    label: "Pindar",
-    loc: [1867, 3901],
-    pop: "",
+    label: "Città 1",
+    loc: [769, 609],
+    pop: "Lorem ipsum dolor sit amet",
     link: "#"
   },
   {
-    label: "Molos",
-    loc: [1480, 4049],
-    pop: "",
-    link: "#"
-  },
-  // Inkari
-  {
-    label: "Jundarai",
-    loc: [1274, 4254],
-    pop: "",
+    label: "Città 2",
+    loc: [588, 620],
+    pop: "Lorem ipsum dolor sit amet",
     link: "#"
   },
   {
-    label: "Radaris",
-    loc: [977, 4390],
-    pop: "",
+    label: "Città 3",
+    loc: [363, 660],
+    pop: "Lorem ipsum dolor sit amet",
+    link: "#"
+  },
+  // Lar Bane
+  {
+    label: "Città 1",
+    loc: [96, 2145],
+    pop: "Lorem ipsum dolor sit amet",
     link: "#"
   },
   {
-    label: "Geldast",
-    loc: [688, 4370],
-    pop: "",
+    label: "Città 2",
+    loc: [535, 2543],
+    pop: "Lorem ipsum dolor sit amet",
+    link: "#"
+  },
+  // Melidor
+  {
+    label: "Lithoria",
+    loc: [2026, 2250],
+    pop: "Lorem ipsum dolor sit amet",
     link: "#"
   },
   {
-    label: "Heldar",
-    loc: [599, 4324],
-    pop: "",
+    label: "Roccargento",
+    loc: [1869, 1872],
+    pop: "Lorem ipsum dolor sit amet",
     link: "#"
   },
   {
-    label: "Nimirdaz",
-    loc: [279, 4270],
-    pop: "",
+    label: "Città 1",
+    loc: [1658, 2036],
+    pop: "Lorem ipsum dolor sit amet",
     link: "#"
   },
   {
-    label: "Hang-Dar",
-    loc: [186, 3969],
-    pop: "",
-    link: "#"
-  },
-  // Aumar
-  {
-    label: "Gamaran",
-    loc: [2565, 2825],
-    pop: "",
+    label: "Città 2",
+    loc: [2043, 2631],
+    pop: "Lorem ipsum dolor sit amet",
     link: "#"
   },
   {
-    label: "Lakeside",
-    loc: [2648, 2657],
-    pop: "",
+    label: "Città 3",
+    loc: [2236, 2418],
+    pop: "Lorem ipsum dolor sit amet",
+    link: "#"
+  },
+  // Regno degli Elfi
+  // {
+  //   label: "Lorem Ipsum",
+  //   loc: [1340, 342],
+  //   pop: "Lorem ipsum dolor sit amet",
+  //   link: "#"
+  // },
+  // Teocrazia di Moradin
+  {
+    label: "Anticatorre",
+    loc: [1172, 1599],
+    pop: "Lorem ipsum dolor sit amet",
     link: "#"
   },
   {
-    label: "Lamora",
-    loc: [2164, 2545],
-    pop: "",
+    label: "Città 1",
+    loc: [661, 1324],
+    pop: "Lorem ipsum dolor sit amet",
     link: "#"
   },
   {
-    label: "Erth",
-    loc: [2686, 2304],
-    pop: "",
-    link: "#"
-  },
-  // Kessen
-  {
-    label: "Opur",
-    loc: [1600, 2658],
-    pop: "",
-    link: "#"
-  },
-  // Dreamor
-  {
-    label: "Qadris",
-    loc: [1790, 3640],
-    pop: "",
+    label: "Città 2",
+    loc: [843, 1063],
+    pop: "Lorem ipsum dolor sit amet",
     link: "#"
   },
   {
-    label: "Morun",
-    loc: [1343, 3419],
-    pop: "",
+    label: "Città 3",
+    loc: [1058, 1054],
+    pop: "Lorem ipsum dolor sit amet",
+    link: "#"
+  },
+  // Tolidor
+  {
+    label: "Approdo Crepuscolare",
+    loc: [1333, 2781],
+    pop: "Lorem ipsum dolor sit amet",
     link: "#"
   },
   {
-    label: "Greenriver",
-    loc: [1336, 3829],
-    pop: "",
+    label: "Feralian",
+    loc: [855, 3046],
+    pop: "Lorem ipsum dolor sit amet",
     link: "#"
   },
   {
-    label: "Kinderun",
-    loc: [1140, 3338],
-    pop: "",
+    label: "Città 1",
+    loc: [1080, 3259],
+    pop: "Lorem ipsum dolor sit amet",
     link: "#"
   },
   {
-    label: "Lonestar",
-    loc: [748, 2965],
-    pop: "",
-    link: "#"
-  },
-  // Gwaldur
-  {
-    label: "Zarhia",
-    loc: [468, 3612],
-    pop: "",
+    label: "Città 3",
+    loc: [1685, 3116],
+    pop: "Lorem ipsum dolor sit amet",
     link: "#"
   },
   {
-    label: "Vardanos",
-    loc: [450, 3239],
-    pop: "",
+    label: "Città 4",
+    loc: [1590, 3404],
+    pop: "Lorem ipsum dolor sit amet",
     link: "#"
   },
   {
-    label: "Eathos",
-    loc: [70, 3192],
-    pop: "",
+    label: "Città 5",
+    loc: [1769, 2973],
+    pop: "Lorem ipsum dolor sit amet",
     link: "#"
   },
   {
-    label: "Nur-Batosh",
-    loc: [396, 2940],
-    pop: "",
+    label: "Città 6",
+    loc: [2027, 3321],
+    pop: "Lorem ipsum dolor sit amet",
     link: "#"
   },
-  // Thanaros
-  {
-    label: "Jademar",
-    loc: [716, 2384],
-    pop: "",
-    link: "#"
-  },
-  {
-    label: "Sorosh",
-    loc: [428, 2379],
-    pop: "",
-    link: "#"
-  },
-  // Laendil
-  {
-    label: "Jesper",
-    loc: [1154, 2692],
-    pop: "",
-    link: "#"
-  },
-  {
-    label: "Tamalen",
-    loc: [1241, 2183],
-    pop: "",
-    link: "#"
-  },
-  {
-    label: "Mistdeep",
-    loc: [1044, 2065],
-    pop: "",
-    link: "#"
-  },
-  // Faeland
-  {
-    label: "Devine",
-    loc: [1413, 1672],
-    pop: "",
-    link: "#"
-  },
-  {
-    label: "Iratar",
-    loc: [1133, 1686],
-    pop: "",
-    link: "#"
-  },
-  {
-    label: "Oloruth",
-    loc: [1201, 1483],
-    pop: "",
-    link: "#"
-  },
-  {
-    label: "Riordan",
-    loc: [1322, 999],
-    pop: "",
-    link: "#"
-  },
-  // Kartaren
-  {
-    label: "Stormvale",
-    loc: [1938, 1571],
-    pop: "",
-    link: "#"
-  },
-  {
-    label: "Adaren",
-    loc: [1956, 1007],
-    pop: "",
-    link: "#"
-  },
-  {
-    label: "Weldun",
-    loc: [2421, 1238],
-    pop: "",
-    link: "#"
-  },
-  {
-    label: "Kantias",
-    loc: [1799, 1081],
-    pop: "",
-    link: "#"
-  },
-  // Laentas
-  {
-    label: "Yaras",
-    loc: [2056, 619],
-    pop: "",
-    link: "#"
-  },
-  {
-    label: "Thiros",
-    loc: [1776, 459],
-    pop: "",
-    link: "#"
-  },
-  {
-    label: "Selvane",
-    loc: [1723, 740],
-    pop: "",
-    link: "#"
-  }
 ];
 
 for (let i = 0; i < cities_markers.length; i++) {
