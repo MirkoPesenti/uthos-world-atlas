@@ -1,6 +1,6 @@
 // POIs
-var marker_icon_region = L.icon({
-  className: "icon-region",
+var marker_icon_kingdom = L.icon({
+  className: "icon-kingdom",
   iconUrl: "/assets/markers/green-marker-icon.png",
   iconRetinaUrl: "/assets/markers/green-marker-icon-2x.png",
   iconSize: [25, 41],

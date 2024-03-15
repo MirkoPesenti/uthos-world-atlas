@@ -50,12 +50,6 @@ let capitals_markers = [
     img: "/images/capitals/dunmere.jpg",
   },
   {
-    label: "Anticatorre",
-    loc: [1172, 1599],
-    pop: "Lorem ipsum dolor sit amet",
-    img: "/images/capitals/dunmere.jpg",
-  },
-  {
     label: "Bassoporto",
     loc: [1819, 2429],
     pop: "Lorem ipsum dolor sit amet",
@@ -80,20 +74,8 @@ let capitals_markers = [
     img: "/images/capitals/dunmere.jpg",
   },
   {
-    label: "Minas Bane",
-    loc: [187, 2476],
-    pop: "Lorem ipsum dolor sit amet",
-    img: "/images/capitals/dunmere.jpg",
-  },
-  {
     label: "Mirs",
     loc: [446, 226],
-    pop: "Lorem ipsum dolor sit amet",
-    img: "/images/capitals/dunmere.jpg",
-  },
-  {
-    label: "Sicariad",
-    loc: [870, 1705],
     pop: "Lorem ipsum dolor sit amet",
     img: "/images/capitals/dunmere.jpg",
   },
@@ -107,6 +89,25 @@ let capitals_markers = [
   {
     label: "Ylhanor",
     loc: [1340, 342],
+    pop: "Lorem ipsum dolor sit amet",
+    img: "/images/capitals/dunmere.jpg",
+  },
+  // Teocrazia di Moradin
+  {
+    label: "Anticatorre",
+    loc: [1172, 1599],
+    pop: "Lorem ipsum dolor sit amet",
+    img: "/images/capitals/dunmere.jpg",
+  },
+  {
+    label: "Sicariad",
+    loc: [870, 1705],
+    pop: "Lorem ipsum dolor sit amet",
+    img: "/images/capitals/dunmere.jpg",
+  },
+  {
+    label: "Minas Bane",
+    loc: [187, 2476],
     pop: "Lorem ipsum dolor sit amet",
     img: "/images/capitals/dunmere.jpg",
   },

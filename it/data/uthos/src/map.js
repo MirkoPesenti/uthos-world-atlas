@@ -18,6 +18,8 @@ var map = L.map("map", {
   zoomControl: false,
   attributionControl: false,
   layers: [
+    kingdoms_lg,
+    capitals_lg,
     // landMap,
     // roads_lg,
     // mountains_lg,
@@ -27,7 +29,6 @@ var map = L.map("map", {
     // forests_lg,
     // deserts_lg,
     // swamps_lg,
-    capitals_lg,
     // cities_lg,
     // keeps_lg,
     // villages_lg,
@@ -55,7 +56,7 @@ var baseLayers = {
 
 // Markers
 var markers = {
-  // Regioni: regions_lg,
+  Regni: kingdoms_lg,
   Capitali: capitals_lg,
   // Città: cities_lg,
   // Fortezze: keeps_lg,
@@ -70,6 +71,7 @@ var uthosBaseMap = L.imageOverlay("/maps/uthos/uthos.jpg", bounds).addTo(map);
 
 // Concat Markers for search
 var allMarkers = capitals_markers.concat(
+  kingdoms_markers,
   // roads_markers,
   // mountains_markers,
   // islands_markers,
