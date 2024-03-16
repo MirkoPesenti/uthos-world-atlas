@@ -23,6 +23,7 @@ var map = L.map("map", {
     cities_lg,
     // keeps_lg,
     // locations_lg,
+    ruins_lg,
     
     // landMap,
     // roads_lg,
@@ -34,7 +35,6 @@ var map = L.map("map", {
     // deserts_lg,
     // swamps_lg,
     // villages_lg,
-    // ruins_lg,
   ]
 });
 
@@ -59,10 +59,10 @@ var markers = {
   Regni: kingdoms_lg,
   Capitali: capitals_lg,
   Città: cities_lg,
-  Fortezze: keeps_lg,
-  Luoghi: locations_lg,
   // Villaggi: villages_lg,
-  // Rovine: ruins_lg
+  Fortezze: keeps_lg,
+  Rovine: ruins_lg,
+  Luoghi: locations_lg,
 };
 
 // Init base Map
@@ -74,6 +74,7 @@ var allMarkers = capitals_markers.concat(
   cities_markers,
   keeps_markers,
   locations_markers,
+  ruins_markers,
   // roads_markers,
   // mountains_markers,
   // islands_markers,
@@ -83,7 +84,6 @@ var allMarkers = capitals_markers.concat(
   // deserts_markers,
   // swamps_markers,
   // villages_markers,
-  // ruins_markers,
 );
 
 // console.table(allMarkers);

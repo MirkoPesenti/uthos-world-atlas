@@ -58,6 +58,36 @@ let locations_markers = [
     pop: "Lorem ipsum dolor sit amet",
     img: "/images/locations/picco-di-karnat.jpg",
   },
+  {
+    label: "Location 10",
+    loc: [1443, 1369],
+    pop: "Lorem ipsum dolor sit amet",
+    img: "/images/locations/picco-di-karnat.jpg",
+  },
+  {
+    label: "Location 11",
+    loc: [943, 1664],
+    pop: "Lorem ipsum dolor sit amet",
+    img: "/images/locations/picco-di-karnat.jpg",
+  },
+  {
+    label: "Location 12",
+    loc: [357, 3263],
+    pop: "Lorem ipsum dolor sit amet",
+    img: "/images/locations/picco-di-karnat.jpg",
+  },
+  {
+    label: "Location 13",
+    loc: [1353, 3163],
+    pop: "Lorem ipsum dolor sit amet",
+    img: "/images/locations/picco-di-karnat.jpg",
+  },
+  {
+    label: "Location 14",
+    loc: [1684, 3454],
+    pop: "Lorem ipsum dolor sit amet",
+    img: "/images/locations/picco-di-karnat.jpg",
+  },
 ];
 
 for (let i = 0; i < locations_markers.length; i++) {
